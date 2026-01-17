@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - IDEALEGYPT</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="admin-body">
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="dashboard-logo">
+                <h1>IDEALEGYPT</h1>
+                <span>Dashboard</span>
+            </div>
+            <nav class="dashboard-nav">
+                <a href="../index.html">← Back to Website</a>
+            </nav>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="dashboard-sidebar">
+                <h3>Management</h3>
+                <ul>
+                    <li><a href="#properties" class="active">Properties</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Property Management</h2>
+                        <button id="add-property-btn" class="btn btn-primary">Add Property</button>
+                    </div>
+
+                    <div class="properties-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Property Name</th>
+                                    <th>Type</th>
+                                    <th>Location</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Sample Row -->
+                                <tr>
+                                    <td><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+                                            alt="Ocean View Chalet" style="width:60px;height:40px;object-fit:cover;">
+                                    </td>
+                                    <td>Ocean View Chalet</td>
+                                    <td>Chalet</td>
+                                    <td>Red Sea</td>
+                                    <td>$500,000</td>
+                                    <td><span class="status-badge">For Sale</span></td>
+                                    <td>
+                                        <button class="btn btn-small">Edit</button>
+                                        <button class="btn btn-small btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
